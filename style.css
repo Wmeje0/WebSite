@@ -42,10 +42,6 @@ body, html {
     filter: blur(0) brightness(80%);
 }
 
-#whoAreWe_bg:hover {
-    filter: blur(2.5px) brightness(60%);
-}
-
 #whoAreWe_h1 {
     position: absolute;
     font-weight: bold;
@@ -55,10 +51,6 @@ body, html {
     font-size: 120px;
     opacity: 0;
     transition: opacity 0.25s;
-}
-
-#whoAreWe_bg:hover ~ #whoAreWe_h1{
-    opacity: 1;
 }
 
 #whoAreWe_h2 {
@@ -74,9 +66,20 @@ body, html {
     transition: opacity 0.5s;
 }
 
-#whoAreWe_bg:hover ~ #whoAreWe_h2{
+/* Hovers, done the jank way unfortunately */
+
+#whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(2.5px) brightness(60%);
+}
+
+#whoAreWe:hover > #whoAreWe_h1{
     opacity: 1;
 }
+
+#whoAreWe:hover > #whoAreWe_h2{
+    opacity: 1;
+}
+
 
 /* projects */
 
