@@ -1,0 +1,87 @@
+/* Global variables */
+:root{
+    --orange: #FF451A;
+    --gray_text: #EDEDED;
+    --gray_object: #4A4A4A;
+    --gray_background: #1A1A1A;
+}
+body {
+    background-color: var(--gray_background);
+    color: var(--gray_text);
+    font-family: 'Onest', sans-serif;
+}
+
+/* main */
+
+/* sponsors */
+
+/* whoAreWe */
+body, html {
+    padding: 0;
+    margin: auto;
+    height: 100%;
+}
+  
+#whoAreWe {
+    padding: 0;
+    margin: auto;
+    height: 100%;
+}
+
+#whoAreWe_bg {
+    /* The image used */
+    background-image: url("assets/image/zd1.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0) brightness(80%);
+}
+
+#whoAreWe_bg:hover {
+    filter: blur(2.5px) brightness(60%);
+}
+
+#whoAreWe_h1 {
+    position: absolute;
+    font-weight: bold;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+#whoAreWe_bg:hover ~ #whoAreWe_h1{
+    opacity: 1;
+}
+
+#whoAreWe_h2 {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#whoAreWe_bg:hover ~ #whoAreWe_h2{
+    opacity: 1;
+}
+
+/* projects */
+
+/* timeLine */
+
+/* meetUs */
+
+/* contact */
